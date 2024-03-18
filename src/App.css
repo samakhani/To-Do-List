@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 30px;
+    border: 2px solid gray;
+    padding: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.InputItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Input {
+    width: 100%;
+    border: 2px solid rgb(157 131 182);
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+}
+.AddBtn {
+    width: 100%;
+    background-color: rgb(54, 2, 104);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(54, 2, 104);
+}
+.AddBtn:hover {
+    background-color: rgb(157 131 182);
+    color: rgb(54, 2, 104);
+    border: 1px solid white;
+}
+.taskWrapper{ 
+}
+.taskBox{
   display: flex;
-  flex-direction: column;
+  padding:10px;
+  margin-top: 50px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid rgb(54, 2, 104) ; 
 }
-
-.App-link {
-  color: #61dafb;
+.groupIcon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:20px;
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TrashIcon:hover{
+ transform:scale(1.5);
+}
+.DoneIcon:hover{
+ transform:scale(1.5);
 }
